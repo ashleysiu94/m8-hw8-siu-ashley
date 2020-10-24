@@ -5,25 +5,43 @@ var mainMenu = document.getElementsByClassName("main-menu-labels");
 
 
 //toggle for products
-function toggleSubMenuReveal1 () {;
-  subMenu[0].classList.toggle("show");
+function showSubMenuReveal1 () {;
+  subMenu[0].classList.add("show");
+  subMenu[0].classList.remove("hide");
 }
 
-mainMenu[0].addEventListener("mouseenter", toggleSubMenuReveal1);
-mainMenu[0].addEventListener("mouseleave", toggleSubMenuReveal1);
+function hideSubMenuReveal1 () {;
+  subMenu[0].classList.add("hide");
+  subMenu[0].classList.remove("show");
+}
+
+mainMenu[0].addEventListener("mouseenter", showSubMenuReveal1);
+mainMenu[0].addEventListener("mouseleave", hideSubMenuReveal1);
 
 //toggle for services
-function toggleSubMenuReveal2 () {;
-  subMenu[1].classList.toggle("show");
+function showSubMenuReveal2 () {;
+  subMenu[1].classList.add("show");
+  subMenu[1].classList.remove("hide");
 }
 
-mainMenu[1].addEventListener("mouseenter", toggleSubMenuReveal2);
-mainMenu[1].addEventListener("mouseleave", toggleSubMenuReveal2);
+function hideSubMenuReveal2 () {;
+  subMenu[1].classList.add("hide");
+  subMenu[1].classList.remove("show");
+}
+
+mainMenu[1].addEventListener("mouseenter", showSubMenuReveal2);
+mainMenu[1].addEventListener("mouseleave", hideSubMenuReveal2);
 
 //toggle for company
-function toggleSubMenuReveal3 () {;
-  subMenu[2].classList.toggle("show");
+function showSubMenuReveal3 () {;
+  subMenu[2].classList.add("show");
+  subMenu[2].classList.remove("hide");
 }
 
-mainMenu[2].addEventListener("mouseenter", toggleSubMenuReveal3);
-mainMenu[2].addEventListener("mouseleave", toggleSubMenuReveal3);
+function hideSubMenuReveal3 () {;
+  subMenu[2].classList.add("hide");
+  subMenu[2].classList.remove("show");
+}
+
+mainMenu[2].addEventListener("mouseenter", showSubMenuReveal3);
+mainMenu[2].addEventListener("mouseleave", hideSubMenuReveal3);
